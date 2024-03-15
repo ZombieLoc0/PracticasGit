@@ -1,4 +1,5 @@
 #15/03/2024
+#Carlos Delgadillo, Sebastian Diaz, Angel Ferreira
 
 import random
 
