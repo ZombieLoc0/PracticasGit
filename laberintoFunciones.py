@@ -28,13 +28,13 @@ def obtener_movimiento():
     return input("\nIngrese su siguiente movimiento (w: arriba, s: abajo, a: izquierda, d: derecha): ")
 
 def mover_jugador(fila_jugador, columna_jugador, movimiento):
-    if movimiento == 'w' and fila_jugador > 0:
+    if movimiento == 't' and fila_jugador > 0:
         fila_jugador -= 1
-    elif movimiento == 's' and fila_jugador < FILAS - 1:
+    elif movimiento == 'g' and fila_jugador < FILAS - 1:
         fila_jugador += 1
-    elif movimiento == 'a' and columna_jugador > 0:
+    elif movimiento == 'f' and columna_jugador > 0:
         columna_jugador -= 1
-    elif movimiento == 'd' and columna_jugador < COLUMNAS - 1:
+    elif movimiento == 'h' and columna_jugador < COLUMNAS - 1:
         columna_jugador += 1
     else:
         print("Movimiento no válido.")
